@@ -8,6 +8,8 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
+//TODO: add implementation of CEB and OFB mode
+
 // DES encrpyt: CBC mode
 func DESEncrypt(plainText, iv, key []byte) ([]byte, error) {
 	block, err := des.NewCipher(key)
